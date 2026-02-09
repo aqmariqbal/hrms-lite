@@ -16,10 +16,16 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
-# CORS for React (Vite)
+# UPDATED CORS: Added your Netlify production URL
+# This allows your frontend to securely communicate with this backend
+origins = [
+    "http://localhost:5173",             # Local development
+    "https://hrmsonline.netlify.app",    # Deployed Netlify frontend
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
