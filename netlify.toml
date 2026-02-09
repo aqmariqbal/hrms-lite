@@ -1,0 +1,15 @@
+[build]
+  # If your code is in a folder named 'frontend', use that. 
+  # If it's in the root, change this to "" or delete the line.
+  base = "frontend"
+
+  # Netlify will automatically 'cd' into the base folder before running this
+  command = "npm run build"
+
+  # This is the folder created AFTER the build (usually 'dist' for Vite)
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
