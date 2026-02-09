@@ -97,7 +97,7 @@ function App() {
         <p>Employee & Attendance Management</p>
       </header>
 
-      {/* ================= EMPLOYEE SECTION ================= */}
+      {/*EMPLOYEE SECTION*/}
       <div className="card">
         <h2>{editingId ? "Update Employee" : "Add Employee"}</h2>
 
@@ -143,7 +143,7 @@ function App() {
         </form>
       </div>
 
-      {/* ================= EMPLOYEE LIST ================= */}
+      {/*EMPLOYEE LIST*/}
       <div className="card">
         <h2>Employees</h2>
 
@@ -182,7 +182,7 @@ function App() {
         </table>
       </div>
 
-      {/* ================= ATTENDANCE SECTION ================= */}
+      {/*ATTENDANCE SECTION*/}
       <div className="card">
         <h2>Mark Attendance</h2>
 
@@ -233,7 +233,7 @@ function App() {
         </form>
       </div>
 
-      {/* ================= SUMMARY ================= */}
+      {/*SUMMARY*/}
       {summary !== null && (
         <div className="card summary">
           <h3>Total Present Days</h3>
@@ -241,7 +241,7 @@ function App() {
         </div>
       )}
 
-      {/* ================= ATTENDANCE TABLE ================= */}
+      {/*ATTENDANCE TABLE*/}
       {attendance.length > 0 && (
         <div className="card">
           <h2>Attendance Records</h2>

@@ -26,7 +26,7 @@ class Attendance(Base):
     id = Column(Integer, primary_key=True, index=True)
     employee_id = Column(Integer, ForeignKey("employees.id"), nullable=False)
     date = Column(Date, nullable=False)
-    status = Column(String, nullable=False)  # Present / Absent
+    status = Column(String, nullable=False)  
 
     # Relationship back to employee
     employee = relationship("Employee", back_populates="attendance_records")

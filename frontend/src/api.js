@@ -1,8 +1,8 @@
 const BASE_URL ="https://hrms-lite-backend-w5vu.onrender.com";
 
-/* =======================
+/*
    EMPLOYEE APIs
-======================= */
+ */
 
 export const getEmployees = async () => {
   const res = await fetch(`${BASE_URL}/employees`);
@@ -34,9 +34,9 @@ export const deleteEmployee = async (id) => {
 };
 
 
-/* =======================
+/* 
    ATTENDANCE APIs
-======================= */
+ */
 
 export const markAttendance = async (attendance) => {
   const res = await fetch(`${BASE_URL}/attendance`, {

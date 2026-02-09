@@ -16,8 +16,7 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
-# UPDATED CORS: Added your Netlify production URL
-# This allows your frontend to securely communicate with this backend
+# UPDATED CORS
 origins = [
     "http://localhost:5173",             # Local development
     "https://hrmsonline.netlify.app",    # Deployed Netlify frontend

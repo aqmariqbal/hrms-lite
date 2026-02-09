@@ -3,7 +3,7 @@ from fastapi import HTTPException, status
 from app import models, schemas
 
 
-# ✅ CREATE employee (with duplicate check)
+#CREATE employee (with duplicate check)
 def create_employee(db: Session, employee: schemas.EmployeeCreate):
     existing = db.query(models.Employee).filter(
         (models.Employee.email == employee.email) |
@@ -29,19 +29,19 @@ def create_employee(db: Session, employee: schemas.EmployeeCreate):
     return new_employee
 
 
-# ✅ GET all employees
+# GET all employees
 def get_all_employees(db: Session):
     return db.query(models.Employee).all()
 
 
-# ✅ GET employee by ID (REQUIRED – was missing)
+# GET employee by ID (REQUIRED – was missing)
 def get_employee_by_id(db: Session, employee_id: int):
     return db.query(models.Employee).filter(
         models.Employee.id == employee_id
     ).first()
 
 
-# ✅ DELETE employee
+# DELETE employee
 def delete_employee(db: Session, employee_id: int):
     employee = get_employee_by_id(db, employee_id)
 
