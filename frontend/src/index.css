@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.app {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #38bdf8;
+}
+
+.card {
+  background: #020617;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #38bdf8, #22c55e);
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.primary-btn:hover {
+  opacity: 0.9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #020617;
+}
+
+.status-present {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.status-absent {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.summary {
+  text-align: center;
+}
+
+.summary span {
+  font-size: 2.5rem;
+  color: #22c55e;
+}
